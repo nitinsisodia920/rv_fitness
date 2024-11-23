@@ -1,0 +1,90 @@
+/* PhotoBlog.css */
+.blog-card {
+    position: relative;
+    overflow: hidden;
+    border-radius: 0.5rem;
+    background: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  .blog-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .blog-card img {
+    transition: transform 0.3s ease;
+  }
+  
+  .blog-card:hover img {
+    transform: scale(1.05);
+  }
+  
+  .category-badge {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    padding: 0.25rem 0.75rem;
+    background-color: #f97316;
+    color: white;
+    border-radius: 9999px;
+    font-size: 0.875rem;
+    font-weight: 500;
+  }
+  
+  .image-strip {
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+  }
+  
+  .image-strip::-webkit-scrollbar {
+    display: none;
+  }
+  
+  .image-strip img {
+    flex: 0 0 auto;
+    transition: opacity 0.3s ease;
+  }
+  
+  .load-more-button {
+    background: #f97316;
+    color: white;
+    padding: 0.75rem 2rem;
+    border-radius: 0.5rem;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+  }
+  
+  .load-more-button:hover {
+    background: #ea580c;
+  }
+  
+  @media (max-width: 768px) {
+    .blog-grid {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+  
+  @media (min-width: 769px) and (max-width: 1024px) {
+    .blog-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .blog-card {
+    animation: fadeIn 0.5s ease-out forwards;
+  }

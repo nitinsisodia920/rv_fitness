@@ -1,0 +1,20 @@
+#icon{
+    color: rgb(55, 57, 57);
+    /* height: 50vh; */
+
+}
+
+.header_logo{
+    width: 120px;
+}
+.form-inline {
+    position: relative;
+  }
+  
+  .list-group {
+    position: absolute;
+    width: 100%;
+    top: 100%;
+    left: 0;
+    z-index: 1000;
+  }

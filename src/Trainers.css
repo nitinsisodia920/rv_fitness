@@ -1,0 +1,205 @@
+.trainer-page {
+  padding: 2rem;
+  background-color: #fff;
+  min-height: 100vh;
+}
+
+.trainer-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.trainer-header h1 {
+  color: #ff6b00;
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.trainer-header p {
+  color: #666;
+  font-size: 1.1rem;
+}
+
+.category-filters {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 3rem;
+  flex-wrap: wrap;
+}
+
+.category-btn {
+  padding: 0.75rem 1.5rem;
+  border: 2px solid #ff6b00;
+  border-radius: 25px;
+  background: transparent;
+  color: #ff6b00;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.category-btn:hover {
+  background: #ff6b00;
+  color: white;
+}
+
+.category-btn.active {
+  background: #ff6b00;
+  color: white;
+}
+
+.trainers-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 2rem;
+  padding: 1rem;
+}
+
+.trainer-card {
+  background: white;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.trainer-card:hover {
+  transform: translateY(-5px);
+}
+
+.trainer-image {
+  position: relative;
+  height: 250px;
+  overflow: hidden;
+}
+
+.trainer-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.social-icons {
+  position: absolute;
+  bottom: 1rem;
+  right: 1rem;
+  display: flex;
+  gap: 0.5rem;
+}
+
+.social-icon {
+  background: rgba(255, 255, 255, 0.9);
+  padding: 0.5rem;
+  border-radius: 50%;
+  color: #ff6b00;
+  width: 35px;
+  height: 35px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.social-icon:hover {
+  background: #ff6b00;
+  color: white;
+}
+
+.trainer-info {
+  padding: 1.5rem;
+}
+
+.trainer-info h2 {
+  color: #333;
+  margin-bottom: 0.5rem;
+  font-size: 1.5rem;
+}
+
+.specialty {
+  color: #ff6b00;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.trainer-stats {
+  display: flex;
+  gap: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.stat {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: #666;
+}
+
+.stat-icon {
+  color: #ff6b00;
+  width: 20px;
+  height: 20px;
+}
+
+.description {
+  color: #666;
+  margin-bottom: 1.5rem;
+  line-height: 1.6;
+}
+
+.trainer-footer {
+  border-top: 1px solid #eee;
+  padding-top: 1rem;
+}
+
+.action-buttons {
+  display: flex;
+  gap: 1rem;
+}
+
+.contact-btn {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.75rem;
+  border: none;
+  border-radius: 8px;
+  background: #ff6b00;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+
+.contact-btn:hover {
+  background: #e65c00;
+}
+
+.btn-icon {
+  width: 20px;
+  height: 20px;
+}
+
+@media (max-width: 768px) {
+  .trainer-page {
+    padding: 1rem;
+  }
+  
+  .category-filters {
+    gap: 0.5rem;
+  }
+  
+  .category-btn {
+    padding: 0.5rem 1rem;
+    font-size: 0.9rem;
+  }
+  
+  .trainers-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .trainer-header h1 {
+    font-size: 2rem;
+  }
+}
